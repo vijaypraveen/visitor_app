@@ -1,0 +1,14 @@
+{
+    "name": "Docker visitor app",
+    "version": "1.0.0",
+    "description": "Visitor Hit app",
+    "author": "Vijay Praveen <vijaypraveen@gmail.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "redis": "3.0.2"
+    }
+  }

@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  web1:
+    build:
+      context: ./visits
+    depends_on:
+    - redis
+  web2:
+    build:
+      context: ./visits
+    depends_on:
+    - redis
+  redis:
+    image: redis
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+    - "8080"
+    depends_on:
+    - web1
+    - web2
