@@ -1,14 +1,17 @@
 {
-    "name": "Docker visitor app",
-    "version": "1.0.0",
-    "description": "Visitor Hit app",
-    "author": "Vijay Praveen <vijaypraveen@gmail.com>",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.16.1",
-      "redis": "3.0.2"
-    }
+  "name": "docker_visitor_app",
+  "version": "1.0.0",
+  "description": "Visitor App",
+  "author": "Vijay Praveen <vijaypraveen@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "redis": "3.0.2",
+    "ip": "1.1.5",
+    "path": "0.12.7",
+    "pug": "3.0.0"
   }
+}

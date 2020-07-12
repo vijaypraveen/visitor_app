@@ -3,20 +3,25 @@ services:
   web1:
     build:
       context: ./visits
+    container_name: web1
     depends_on:
     - redis
   web2:
     build:
       context: ./visits
+    container_name: web2
     depends_on:
     - redis
   redis:
     image: redis
+    container_name: redis
+
   nginx:
     build:
       context: ./nginx
+    container_name: nginx
     ports:
-    - "8080"
+    - "8080:8080"
     depends_on:
     - web1
     - web2
